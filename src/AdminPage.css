@@ -1,0 +1,222 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    color: #ecf0f1;
+}
+.remove-btn {
+    margin-top: 8px;
+    padding: 6px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove-btn:hover {
+    background-color: #e60000;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #34495e;
+    padding: 30px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #ecf0f1;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1abc9c;
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.remove-movie-btn {
+    padding: 8px 12px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Manage Movies */
+.add-movie-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #16a085;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-movie-btn:hover {
+    background-color: #1abc9c;
+}
+
+.add-movie-form input {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.movie-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.movie-card {
+    background-color: #34495e;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie-info {
+    margin-top: 10px;
+}
+
+.movie-info h4 {
+    font-size: 18px;
+}
+
+.movie-info p {
+    font-size: 14px;
+}
+
+/* View Bookings */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:hover {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-card {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
